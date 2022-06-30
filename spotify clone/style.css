@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Josefin+Sans&display=swap');
+
+body{
+    background-color: bisque;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'El Messiri', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 63px;
+    background-color: black;
+    color: azure;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    padding: 0 8px;
+    
+    width: 88px;
+    font-weight: bolder;
+    color: antiquewhite;
+    border-radius: 40px;
+}
+.brand{
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.container{
+    min-height: 65vh;
+    background-color: rgba(0, 0, 0, 0.874);
+    color: bisque;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 85%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(image3.webp);
+}
+.Bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgba(250, 225, 215, 0.636);
+    flex-direction: column;
+}
+.icons{
+    margin-top: 20px;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+    align-self: center;
+}
+
+.songItemContainer{
+    margin-top: 60px;
+     }
+
+.songItem{
+  display: flex;
+  height: 40px;
+  background-color: rgba(122, 156, 152, 0.777);
+  border-radius: 40px;
+  font-weight: 600;
+  width: 400px;
+  color: rgb(0, 0, 0);
+  margin: 14px 3px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.songItem img{
+border-radius: 30px;
+width: 40px;
+height: 40px;
+margin:0 23px;
+}
+
+.timestamp{
+    margin: 0 23px;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 2vw;
+    font-family: 'Josefin Sans', sans-serif ;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+songItemPlay{
+    width: 50px;
+}
+
+.songInfo.masterSongName{
+    font-weight: 700px;
+    color: aliceblue;
+}
